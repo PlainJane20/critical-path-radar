@@ -1,5 +1,7 @@
 # Critical Path Radar
 
+### *Dependency intelligence that separates schedule risk from visible noise*
+
 <div align="center">
 
 [![Python 3.9+](https://img.shields.io/badge/Python_3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -23,6 +25,25 @@ emergency. That distinction requires real graph algorithms, not another
 prompt. This is the algorithmically meatiest project in the series on
 purpose — the clearest "a TPM who understands scheduling theory, not just
 status collection" signal.
+
+## At a glance
+
+| | |
+|---|---|
+| **Problem** | RAG status identifies unhealthy work but not whether that work can move the delivery date |
+| **Approach** | Build a Jira dependency graph, run deterministic CPM, then combine slack and staleness into risk signals |
+| **Proof** | Verified against a known textbook network and a real Jira dependency graph |
+| **Output** | Critical path, total duration, activity slack, risk ranking, Markdown report, and Gantt chart |
+
+## Competencies demonstrated
+
+| Competency | Observable evidence |
+|---|---|
+| Program analytics | Forward/backward passes calculate earliest, latest, and slack values |
+| Dependency management | Jira `Blocks` relationships become a directed execution graph |
+| Technical judgment | Mathematical scheduling remains deterministic rather than delegated to an LLM |
+| Quality engineering | Textbook expected results protect against confidently wrong bottleneck analysis |
+| Executive communication | Algorithmic output is translated into prioritized schedule risk and a visual chart |
 
 ## Real output, against real (self-created) dependency data
 
