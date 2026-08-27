@@ -1,3 +1,5 @@
+<img src="docs/critical-path-radar-banner.svg" alt="Critical Path Radar — Program Dependency Intelligence" width="100%" />
+
 # Critical Path Radar
 
 ### *Dependency intelligence that separates schedule risk from visible noise*

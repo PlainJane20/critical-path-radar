@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Critical Path Radar</title>
+  <desc id="description">Finding the work that truly controls the delivery date— and separating it from visible noise.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081a2a"/>
+      <stop offset="0.56" stop-color="#12354d"/>
+      <stop offset="1" stop-color="#0ea5e9" stop-opacity=".72"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#030b13" flood-opacity=".38"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1035" cy="55" r="230" fill="url(#glow)"/>
+  <g opacity=".16" fill="none" stroke="#fbbf24" stroke-width="1.2" color="#fbbf24"><path d="M780 236l64-62 67 24 68-102 70 34 94-78"/><g fill="currentColor" stroke="none"><circle cx="780" cy="236" r="6"/><circle cx="844" cy="174" r="6"/><circle cx="911" cy="198" r="6"/><circle cx="979" cy="96" r="6"/><circle cx="1049" cy="130" r="6"/><circle cx="1143" cy="52" r="6"/></g></g>
+  <g transform="translate(74 68)" filter="url(#shadow)">
+    <rect width="88" height="88" rx="22" fill="#102f45" stroke="#fbbf24" stroke-opacity=".58"/>
+    <g fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" color="#fbbf24"><circle cx="16" cy="62" r="6"/><circle cx="44" cy="25" r="6"/><circle cx="73" cy="44" r="6"/><circle cx="62" cy="72" r="6"/><path d="M20 57l20-27 28 15-7 21"/><path d="M14 74h61" opacity=".45"/></g>
+  </g>
+  <text x="190" y="112" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="50" font-weight="750" letter-spacing="-1">Critical Path Radar</text>
+  <text x="192" y="153" fill="#fbbf24" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2.5">PROGRAM DEPENDENCY INTELLIGENCE</text>
+  <text x="75" y="225" fill="#dcebf0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21">Finding the work that truly controls the delivery date—</text>
+  <text x="75" y="258" fill="#dcebf0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21">and separating it from visible noise.</text>
+  <g transform="translate(870 168)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700"><g transform="translate(0 0)"><rect width="78" height="42" rx="21" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".2"/><text x="39" y="26" text-anchor="middle" fill="#edf7fa">CPM</text></g><g transform="translate(88 0)"><rect width="84" height="42" rx="21" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".2"/><text x="42" y="26" text-anchor="middle" fill="#edf7fa">Jira graph</text></g><g transform="translate(182 0)"><rect width="108" height="42" rx="21" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".2"/><text x="54" y="26" text-anchor="middle" fill="#edf7fa">slack analysis</text></g></g>
+</svg>
