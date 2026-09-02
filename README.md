@@ -28,6 +28,15 @@ prompt. This is the algorithmically meatiest project in the series on
 purpose — the clearest "a TPM who understands scheduling theory, not just
 status collection" signal.
 
+> **Why this repo exists:** built as a self-learning project to implement
+> real CPM graph algorithms (forward/backward pass, slack) against live
+> Jira data by hand, rather than calling a library — not positioned to
+> compete with mature Jira Marketplace apps (BigPicture, Structure.Gantt,
+> Simple Gantt) that have already shipped this exact math, with real
+> critical-path/float features, to thousands of paying teams. The CPM
+> math itself isn't the differentiator here; understanding it well enough
+> to implement and test it correctly is the point.
+
 ## At a glance
 
 | | |
