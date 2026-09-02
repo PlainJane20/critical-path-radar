@@ -28,13 +28,23 @@ prompt. This is the algorithmically meatiest project in the series on
 purpose — the clearest "a TPM who understands scheduling theory, not just
 status collection" signal.
 
-> **Why this repo exists:** built as a self-learning project to implement
-> real CPM graph algorithms (forward/backward pass, slack) against live
-> Jira data by hand, rather than calling a library — not positioned to
-> compete with mature Jira Marketplace apps that have already shipped this exact math, with real
-> critical-path/float features. The CPM
-> math itself isn't the differentiator here; understanding it well enough
-> to implement and test it correctly is the point.
+> **Why this repo exists:** hands-on practice implementing real CPM graph
+> algorithms (forward/backward pass, slack) against live Jira data by
+> hand, rather than calling a library — verified against a textbook
+> answer, not just self-consistency (below). The CPM math itself isn't
+> the differentiator; understanding it well enough to implement and test
+> it correctly, and catch two real backwards-logic/timezone bugs along
+> the way, is the point.
+
+> **Related work in this portfolio:** reads the same Jira project
+> (PGMAUTO) as [pm-automation-system](https://github.com/PlainJane20/pm-automation-system)
+> and complements [exec-status-rollup](https://github.com/PlainJane20/exec-status-rollup)
+> directly — RAG status tells you a workstream *looks* unhealthy; this
+> tells you whether that workstream's health *matters* to the delivery
+> date. Not currently one of the two live agents
+> [agent-control-tower](https://github.com/PlainJane20/agent-control-tower)
+> governs (that's slack-daily-brief and exec-status-rollup) since this
+> one has no write side-effects to gate — it only reads and reports.
 
 ## At a glance
 
