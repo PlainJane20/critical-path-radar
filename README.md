@@ -52,8 +52,17 @@ status collection" signal.
 |---|---|
 | **Problem** | RAG status identifies unhealthy work but not whether that work can move the delivery date |
 | **Approach** | Build a Jira dependency graph, run deterministic CPM, then combine slack and staleness into risk signals |
+| **Pattern** | Not an agent: deterministic CPM analysis, no LLM (see [Architecture pattern](#architecture-pattern)) |
 | **Proof** | Verified against a known textbook network and a real Jira dependency graph |
 | **Output** | Critical path, total duration, activity slack, risk ranking, Markdown report, and Gantt chart |
+
+## Architecture pattern
+
+**Not an agent: a deterministic analysis pipeline with no LLM.** `run_analysis.py` fetches Jira dependency links (`jira_graph.py`), runs the Critical Path Method (`cpm.py`), classifies risk from slack and staleness (`risk.py`), and renders a table, Markdown report and chart. No model is called anywhere in the repo; the code is the same each run for the same data.
+
+- **Deterministic vs model-driven:** Everything is deterministic. Nothing is model-driven.
+- **Human gate:** None needed. It is read-only against Jira and writes only a local report.
+- **Honest limit:** It reports on the graph it is given and acts on nothing; issues with no due date get a default duration (flagged in the output), so results depend on the quality of the Jira dates and `Blocks` links.
 
 ## Competencies demonstrated
 
