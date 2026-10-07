@@ -10,6 +10,8 @@
 [![Jira API](https://img.shields.io/badge/Jira_API-0052CC?style=for-the-badge&logo=jira&logoColor=white)](https://developer.atlassian.com/)
 [![No LLM in the math](https://img.shields.io/badge/Algorithm-Critical_Path_Method-1baf7a?style=for-the-badge)]()
 [![Tests](https://img.shields.io/badge/Unit_tests-10_passing-2a78d6?style=for-the-badge)](tests/)
+[![CI](https://img.shields.io/github/actions/workflow/status/PlainJane20/critical-path-radar/ci.yml?branch=main&style=for-the-badge&label=CI)](https://github.com/PlainJane20/critical-path-radar/actions/workflows/ci.yml)
+[![MIT License](https://img.shields.io/badge/License-MIT-6b7280?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -146,6 +148,10 @@ python -m pytest tests/ -v
 python run_analysis.py
 python run_analysis.py --out report.md
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
 
 ## Contact
 
